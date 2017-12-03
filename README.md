@@ -6,3 +6,5 @@ count_targetscan70_cons_output.py takes the output of targetscan_70.pl (availabl
 plot_transitions.py takes a basewise 3'UTR branch length file (provided as bls_big_outfile.txt) and a desired transcript, segments the transcript, and plots the output. Segmented UTRs for all 3'UTRs in bls_big_outfile.txt are provided in big_transitions.txt. Adapted from code in: https://github.com/kslin/targetscan/blob/master/conservation/bls_helpers.py
 
 XZlogisticRegression.R reads Supplemental Tables 3 and 4 (convert to .txt first) and peforms multinomial or binomial logistic regression with or without Pct score as a predictor of evolutionary class.
+
+ChickenHumanLizardSexDiff.R reads in gene count and abundance files along with sample info (provided in this folder), and uses limma/voom to calculate chicken male/female ratios (normalized to ancestral human and anolis male/female ratios) in heart, liver, kidney, and brain
